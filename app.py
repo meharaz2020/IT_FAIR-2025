@@ -79,7 +79,7 @@ def update_data(n):
     column_wise_data = [{'Attribute': col, 'Value': last_row[col].values[0]} for col in last_row.columns]  
     
     return column_wise_data  
-
+server = app.server
 # Run app
 if __name__ == '__main__':
     app.run_server(debug=True)
